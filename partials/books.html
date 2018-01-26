@@ -1,8 +1,9 @@
 <h1>Look at all these guides!</h1>
 <ul>
-    <li ng-repeat="guides in allGuides">
+    <li ng-repeat="guide in allGuides">
         <strong>{{guide.title}}</strong>
-        <p>{{guide.type}}</p>
-        <p>{{guide.price}}</p>
+        <p>Type of book:{{guide.type}}</p>
+        <p>Price: ${{guide.price}}</p>
     </li>
 </ul>
+
