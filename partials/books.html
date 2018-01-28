@@ -2,8 +2,8 @@
 <ul>
     <li ng-repeat="guide in allGuides">
         <strong>{{guide.title}}</strong>
-        <p>Type of book:{{guide.type}}</p>
-        <p>Price: ${{guide.price}}</p>
+        <p style = "text-transform:capitalize">Type of book: {{guide.type}}</p>
+        <p>Price: ${{(guide.price).toFixed(2)}}</p>
     </li>
 </ul>
 
