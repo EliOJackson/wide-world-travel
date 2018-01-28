@@ -5,7 +5,7 @@ angular.module("wideWorldTravel").factory("GuideFactory", function ($q, $http) {
     let getGuides = () => {
         return $q((resolve, reject) => {
             $http
-                .get("../guides.json")
+                .get("../data/guides.json")
                 .then((guides) => {
                     resolve(guides);
                 })
